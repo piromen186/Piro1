@@ -55,7 +55,7 @@
 }
 
 .menu__link {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -86,7 +86,8 @@
 }
 
 .intro__heading {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
+    font-style: italic;
     margin: 0;
     font-size: 60px;
     line-height: 72px;
@@ -96,7 +97,7 @@
 }
 
 .intro__text {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
     max-width: 520px;
@@ -106,7 +107,7 @@
 }
 
 .action-button {
-   font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
    box-sizing: border-box;
    display: inline-block;
    width: 228px;
@@ -156,7 +157,7 @@
 }
 
 .services__heading {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     position: relative;
     bottom: 6px;
     margin-bottom: 28px;
@@ -165,14 +166,14 @@
 }
 
 .services__text {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
     margin-bottom: 50px;
 }
 
 .action-button_white {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #FF2D2D;
     background-color: #FFFFFF;
@@ -196,7 +197,8 @@
 }
 
 .service__heading {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
+    font-style: italic;
     margin: 0;
     letter-spacing: 1.5px;
     font-weight: 600;
@@ -212,7 +214,7 @@
 }
 
 .service__text {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0;
     line-height: 28px;
 }
@@ -247,7 +249,7 @@
 }
 
 .feature__headind {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-size: 42px;
     text-transform: uppercase;
     padding-left: 14px;
@@ -255,7 +257,7 @@
 }
 
 .feature__text {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-size: 16px;
     line-height: 28px;
     max-width: 500px;
@@ -263,9 +265,10 @@
 }
 
 .feature__line {
-    border: 1px solid #FF2D2D;
+    border: none;
     width: 134px;
-    max-height: 4px;
+    height: 2px;
+    background-color: #FF2D2D;
 }
 
 .products__filter {
@@ -275,12 +278,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 20px 56px;
     margin-bottom: 60px;
 }
 
 .products__link {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
+    font-style: italic;
     position: relative;
     text-transform: uppercase;
     left: 46px;
@@ -301,10 +306,12 @@
 }
 
 .products {
+    width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 2px 8px;
 }
 
 .product {
@@ -333,14 +340,14 @@
 }
 
 .team__heading {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-size: 42px;
     text-transform: uppercase;
     margin-bottom: 24px;
 }
 
 .team__text {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-size: 16px;
     margin: 0;
     line-height: 28px;
@@ -410,7 +417,7 @@
 }
 
 .team__selected-name {
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     margin-right: 30px;
     bottom: 6px;
     font-weight: bold;
@@ -420,10 +427,11 @@
 }
 
 .team__selected-link {
+    font-family: 'Open Sans';
+    font-style: italic;
     color: #000000;
     font-size: 18px;
     line-height: 24px;
-    font-style: italic;
     text-decoration: none;
     margin-right: 30px;
 }
@@ -450,6 +458,8 @@
 }
 
 .member__name {
+    font-family: 'Open Sans';
+    font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
