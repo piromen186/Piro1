@@ -593,7 +593,8 @@
 .feedback {}
 
 .feedback__header {
-    margin-left: 90px;
+    text-align: left;
+    margin-left: 155px;
     margin-bottom: 46px;
 }
 
@@ -709,10 +710,7 @@
     box-sizing: border-box;
     position: relative;
     background-color: #2D2D2D;
-    padding-top: 142px;
-    padding-right: 52px;
-    padding-left: 78px;
-    padding-bottom: 126px;
+    padding: 126px 52px 126px 78px;
     max-width: 580px;
     width: 100%;
     height: 486px;
@@ -723,20 +721,22 @@
     font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 700;
+    color: #FFFFFF;
     margin: 0;
     text-transform: uppercase;
     line-height: 34px;
 }
 
 .contacts__adress {
-    line-height: 28px;
+    line-height: 1.75;
 }
 
 .contacts__line {
     font-family: 'Open Sans';
     font-size: 16px;
-    line-height: 34px;
-    margin-bottom: 28px;
+    line-height: 1.75;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .feedback__right-box {
@@ -779,4 +779,72 @@
 
 .footer__social-links > .footer__link:not(:last-child) {
     margin-right: 18px;
+}
+
+/* Responsive */
+
+@media screen and (max-with: 1286px)  {
+    .intro {
+        flex-wrap: nowrap;
+    }
+
+    .intro__content {
+        width: 50%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding-right: 16px;
+    }
+
+    .intro__heading {
+        font-size: 5vw;
+    }
+
+    .intro__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .products {
+        justify-content: flex-start;
+    }
+
+    .product {
+        max-width: 100%;
+        margin-right: 10px;
+    }
+
+    .feedback {
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0 1vw;
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+    }
+
+    .feedback__body {
+        margin-right: 0;
+    }
+
+    .feedback-contacts {
+        flex-wrap: wrap;
+        padding-left: initial;
+        padding-right: initial;
+        padding-bottom: 0;
+        grid-template-columns: 100%;
+    }
+
+    .feedback__left-box {
+        flex: 0 1 auto;
+    }
+
+    .contacts {
+        width: 100%;
+        max-width: 100%;
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+    }
+
+    .feedback-contacts::after {
+        content: initial;
+    }
 }
