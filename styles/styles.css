@@ -80,9 +80,10 @@
 .intro__content {
     position: relative;
     bottom: 12px;
-    width: 616px;
+    max-width: 616px;
+    width: 100%;
     margin-bottom: 20px;
-    margin-right: 74px;
+    margin-right: 0;
 }
 
 .intro__heading {
@@ -91,13 +92,13 @@
     margin: 0;
     font-size: 60px;
     line-height: 72px;
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5;
 }
 
 .intro__text {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     margin: 0;
     line-height: 28px;
     max-width: 520px;
@@ -107,7 +108,7 @@
 }
 
 .action-button {
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+   font-family: 'Open Sans';
    box-sizing: border-box;
    display: inline-block;
    width: 228px;
@@ -126,8 +127,8 @@
 }
 
 .intro__img {
-    width: 554px;
-    height: 360px;
+    max-width: 550px;
+    height: auto;
 }
 
 .section {
@@ -510,7 +511,7 @@
 .subscribe__heading {
     font-family: 'Open Sans';
     color: #FFFFFF;
-    line-height: 24px;
+    line-height: 50px;
     letter-spacing: 1px;
     font-size: 42px;
     font-weight: 700;
@@ -593,9 +594,8 @@
 .feedback {}
 
 .feedback__header {
-    text-align: left;
-    margin-left: 155px;
-    margin-bottom: 46px;
+    align-items: flex-end;
+    margin-bottom: 44px;
 }
 
 .feedback__heading {
@@ -636,6 +636,9 @@
 }
 
 .feedback__form {
+    width: 100%;
+    max-width: 750px;
+    gap: 46px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -643,6 +646,7 @@
 
 .feedback__input {
     color: #000000;
+    flex-grow: 1;
     box-sizing: border-box;
     padding-right: 50px;
     padding-left: 50px;
@@ -660,7 +664,6 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    width: 338px;
     height: 68px;
     background-color:#E0E0E0;
 }
@@ -673,11 +676,8 @@
     padding-left: 50px;
     padding-right: 50px;
     width: 100%;
-    max-width: 734px;
     height: 252px;
     box-sizing: border-box;
-    margin-bottom: 44px;
-    margin-top: 44px;
     border: none;
     border-radius: 5px;
     background-color:#E0E0E0;
@@ -693,7 +693,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 732px;
     height: 74px;
     color:  #FFFFFF;
     font-size: 18px;
@@ -846,6 +845,14 @@
 
     .feedback-contacts::after {
         content: initial;
+    }
+}
+
+@media screen and (max-with: 1250px) {
+    .intro__img {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
     }
 }
 
