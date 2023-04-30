@@ -1,6 +1,6 @@
 .header__line {
     width: 134px;
-    border: 1px solid #FF2D2D;
+    border: 1px solid var(--color-primary)
 }
 
 .section-heading {
@@ -10,7 +10,11 @@
     margin: 0;
     line-height: 56px;
     text-transform: uppercase;
-    font-size: calc(3vw + 2px);
+    font-size: 42px;
+}
+
+:root {
+    --color-primary: #FF2D2D;
 }
 
 .page {
@@ -118,6 +122,7 @@
     margin: 0;
     line-height: 28px;
     max-width: 520px;
+    width: 100%;
     margin-bottom: 62px;
     font-weight: 200;
     margin-top: 36px;
@@ -140,11 +145,12 @@
     font-size: 18px;
     font-weight: 700;
     color: #FFFFFF;
-    background-color: #FF2D2D;
+    background-color: var(--color-primary);
 }
 
 .intro__img {
     max-width: 550px;
+    width: 100%;
     height: auto;
 }
 
@@ -191,7 +197,7 @@
 .action-button_white {
     font-family: 'Open Sans';
     font-size: 18px;
-    color: #FF2D2D;
+    color: var(--color-primary);
     background-color: #FFFFFF;
     border: 2px solid #FF0000;
 }
@@ -278,7 +284,7 @@
 }
 
 .feature__line {
-    border: 1px solid #FF2D2D;
+    border: 1px solid var(--color-primary);
 }
 
 .products__filter {
@@ -307,12 +313,12 @@
 }
 
 .products__link_active {
-    color: #FF2D2D;
+    color: var(--color-primary);
     opacity: 1;
 }
 
 .products__link:hover {
-    color: #FF2D2D;
+    color: var(--color-primary);
 }
 
 .products {
@@ -365,7 +371,7 @@
 }
 
 .team__line {
-    border: 1px solid #FF2D2D;
+    border: 1px solid var(--color-primary);
     margin-left: 0;
 }
 
@@ -564,7 +570,7 @@
     min-height: 78px;
     border-radius: 5px;
     border: none;
-    background-color: #FF2D2D;
+    background-color: var(--color-primary);
     text-transform: uppercase;
     margin-left: 20px;
     margin-top: 56px;
@@ -631,7 +637,7 @@
 }
 
 .feedback__line {
-    border: 1px solid #FF2D2D;
+    border: 1px solid var(--color-primary);
     width: 134px;
     max-height: 4px;
     margin-left: 0;
