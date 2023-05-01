@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
     rel="stylesheet">
-    <script async src="./js/index.js"></script>
 </head>
 
 
@@ -19,9 +18,9 @@
     <div class="page__header page__header_grey">
         <header class="header">
             <nav class="header__navigation">
-                <ul class="menu header__menu">
+                <ul class="menu header__menu header__menu_shown">
                     <li class="menu__items">
-                        <a class="menu__link active-link" href="#">Home</a>
+                        <a class="menu__link active-link" href="#home">Home</a>
                     </li>
                     <li class="menu__items">
                         <a class="menu__link" href="#portfolio">Portfolio</a>
@@ -33,30 +32,14 @@
                         <a class="menu__link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="popup-menu">
-                    <button class="popup-menu__button"></button>
-                    <ul class="popup-menu__list hide-popup">
-                        <li class="popup-menu__item">
-                            <a class="popup-menu__link" href="#">Home</a>
-                        </li>
-                        <li class="popup-menu__item">
-                            <a class="popup-menu__link" href="#">Portfolio</a>
-                        </li>
-                        <li class="popup-menu__item">
-                            <a class="popup-menu__link" href="#">About Us</a>
-                        </li>
-                        <li class="popup-menu__item">
-                            <a class="popup-menu__link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <button class="header__toggle"></button>
             </nav>
         </header>
     </div>
 
     <main class="page__content">
         <div class="page__intro page__header_grey">
-            <section class="intro section">
+            <section class="intro section" id="home">
                 <div class="intro__content">
                     <h1 class="intro__heading section-heading">
                         our strong organaisation
@@ -121,8 +104,7 @@
                 </section>
             </div>
         </section>
-
-        <section class="feature">
+        <section class="feature" id="portfolio">
             <div class="feature__header">
                 <h2 class="feature__headind section-heading">
                     feature products
@@ -170,9 +152,9 @@
             </div>
         </section>
 
-        <section class="section team">
+        <section class="section team" id="about">
             <div class="team__header">
-                <h2 class="team__heading section-heading" id="about">
+                <h2 class="team__heading section-heading">
                     Meet our team
                 </h2>
                 <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed
@@ -237,7 +219,7 @@
                         et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed
                         do
                         iusmod tempor incididunt ut labore et.</p>
-                    <hr class="header__line feedback__line" />
+                    <hr class="header__line feedback__line">
                 </div>
                 <section class="feedback__body section">
                     <form class="feedback__form" action="">
@@ -252,7 +234,7 @@
                 </section>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contact">
                 <h2 class="contacts__heading section-heading">contact info</h2>
                 <address class="contacts__adress">
                     <p class="contacts__line">Jalalabad 24 / A, Ambaarkhana, Sylhet,<br> Bangladesh</p>
@@ -262,7 +244,7 @@
             </section>
         </div>
     </main>
-
+    <script src="./js/index.js"></script>
     <footer class="footer">
         <div class="footer__content section">
             <p class="footer__copyright"> &copy; Copyright @Junaed 2023, All rights reserved.</p>
