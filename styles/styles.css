@@ -290,6 +290,10 @@
 .feature {
     padding-top: 104px;
     padding-bottom: 52px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    max-width: 1249px;
+    margin: 0 auto;
 }
 
 .feature__header {
@@ -612,7 +616,7 @@
 /* Feedback contacts*/
 
 .feedback-contacts {
-    /*display: flex;*/
+    display: flex;
     display: grid;
     justify-content: center;
     align-items: flex-end;
@@ -692,8 +696,6 @@
 .feedback__input {
     color: #000000;
     box-sizing: border-box;
-    padding-right: 54px;
-    padding-left: 54px;
     border: none;
     border-radius: 5px;
     background-color:#E0E0E0;
@@ -723,7 +725,6 @@
     margin-top: 44px;
     margin-bottom: 44px;
     padding: 22px;
-    max-width: 734px;
     width: 100%;
     min-height: 252px;
     box-sizing: border-box;
@@ -743,7 +744,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 732px;
     height: 74px;
     color:  #FFFFFF;
     font-size: 18px;
@@ -760,8 +760,7 @@
     box-sizing: border-box;
     position: relative;
     background-color: #2D2D2D;
-    padding: 126px 52px 126px 78px;
-    min-width: 580px;
+    padding: 12px 52px 126px 78px;
     min-height: 486px;
     grid-column: 4 / 5;
     grid-row: 2 / 3;
@@ -844,7 +843,7 @@
 
 /* Responsive */
 
-@media screen and (max-width: 1286px) {
+@media screen and (max-width: 1249px) {
     .intro {
         flex-wrap: nowrap;
     }
@@ -874,7 +873,7 @@
     }
 
     .feedback-contacts {
-        display: grid;
+        display: flex;
         flex-wrap: wrap;
         padding-left: initial;
         padding-right: initial;
@@ -885,6 +884,7 @@
     .contacts {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         max-width: 100%;
         grid-column: 1 / 6;
@@ -898,9 +898,6 @@
 
 @media screen and (max-width: 1250px) {
 
-    .feedback__body { 
-        padding-right: 56px;
-    }
     .intro__img {
         max-width: 400px;
         width: 100%;
