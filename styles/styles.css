@@ -24,6 +24,7 @@
 .page {
     font-family: 'Open Sans';
     margin: 0;
+    min-width: 350px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -616,13 +617,12 @@
 /* Feedback contacts*/
 
 .feedback-contacts {
-    display: flex;
     display: grid;
     justify-content: center;
     align-items: flex-end;
     padding-top: 92px;
     padding-bottom: 110px;
-    grid-template-columns: 1fr 732px 108px 412px 1fr;
+    grid-template-columns: 1fr 730px 108px 412px 1fr;
     grid-template-rows: repeat(2, auto);
 }
 
